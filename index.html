@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- favicon.ico -->
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <title>QuizzTime</title>
+
+  <!-- fontawesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="flex">
+  <div class="wrapper">
+    <div class="quiz-container">
+
+      <div class="quiz-head">
+        <h1 class="quiz-title">Quiz Time!</h1>
+        <div class="quiz-score flex">
+          <span id="correct-score"></span>/<span id="total-question"></span>
+        </div>
+      </div>
+
+      <div class="quiz-body">
+        <h2 class="quiz-question" id="question">Question</h2>
+        <ul class="quiz-options" onmouseover="soundSelection.play()">
+          <li class="ans">Answer 1</li>
+          <li class="ans">Answer 2</li>
+          <li class="ans">Answer 3</li>
+          <li class="ans">Answer 4</li>
+        </ul>
+        <div id="result">
+          <!-- result here -->
+        </div>
+      </div>
+
+      <div class="quiz-foot">
+        <button type="button" id="check-answer">Answer</button>
+        <button type="button" id="play-again">Play Again</button>
+        <button type="button" id="stream" onclick="linkStream(this)" value="https://www.youtube.com/watch?v=SszP3hlQ55Y">More About ATEEZ</button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- js -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
